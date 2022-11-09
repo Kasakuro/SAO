@@ -7,7 +7,7 @@
     <title>Sword Art Online: Alicization </title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="FocusOnInput()">
     <!-- <div class="main">
         <div class="bg-image">
             <img src="/images/bg-image.jpg" alt="">
@@ -24,13 +24,20 @@
             <img src="/images/bg-image.jpg" alt="">
     </div>
     <!-- fade in and out image -->
-    <div class=elementToFadeInAndOut id="focushereonreload">
-        <img src="/images/title.png" alt="" >
+    <div class=elementToFadeInAndOut >
+        <img src="/images/title.png" alt="" id="focushereonreload" tabindex="1">
     </div>
     <!-- fade out images -->
     <div class="fade-out">
         <div class="image"><img src="/images/title2.png" alt="" class="img-1"></div>
         <div class="image"><img src="/images/title.png" alt="" class="img-2"></div>
     </div>
+
+    <script>
+        function FocusOnInput()
+            {
+                document.getElementById("focushereonreload").focus();
+            }
+    </script>
 </body>
 </html>

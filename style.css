@@ -47,10 +47,8 @@ html::-webkit-scrollbar-track{
     50% {opacity: 0;}
     100% {opacity: 1;}
   }
-
-
-
 /* bg image end */
+
 /* first fade in and out */
 .elementToFadeInAndOut {
     position: absolute;
@@ -67,6 +65,9 @@ html::-webkit-scrollbar-track{
     -webkit-animation: textimage 5s linear forwards;
     animation: textimage 5s linear forwards;
     opacity: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
 }
 
 @-webkit-keyframes textimage {
@@ -95,6 +96,7 @@ html::-webkit-scrollbar-track{
 }
 
 .image {
+    margin-bottom: 30px;
     text-align: center;
     -webkit-animation: textimage2 5s linear forwards;
     animation: textimage2 5s linear forwards;

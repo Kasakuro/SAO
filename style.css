@@ -1,0 +1,116 @@
+html, body {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    
+}
+
+html::-webkit-scrollbar{
+    display: none;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: none;
+    border-radius: 5px;
+    opacity:0.5;
+}
+
+html::-webkit-scrollbar-track{
+    background: none;
+}
+/* bg image start*/
+.container{
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.container img{
+    width: 100%;
+    object-fit: contain;
+    -webkit-animation: textimage2 5s linear forwards;
+    animation: textimage2 5s linear forwards;
+    opacity: 0;
+}
+
+@-webkit-keyframes textimage2 {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  
+  @keyframes textimage2 {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+
+
+/* bg image end */
+/* first fade in and out */
+.elementToFadeInAndOut {
+    position: absolute;
+    top: 145%;
+    transform: translateY(-50);
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.elementToFadeInAndOut img {
+    width: 49%;    
+    -webkit-animation: textimage 5s linear forwards;
+    animation: textimage 5s linear forwards;
+    opacity: 0;
+}
+
+@-webkit-keyframes textimage {
+  50% { opacity: 1; }
+}
+
+@keyframes textimage {
+  50% { opacity: 1; }
+}
+/* first fade in and out end*/
+
+
+/* top image text start */
+.fade-out {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50);
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    display: grid;
+    grid-gap: 13px;
+    padding: 12px;
+    grid-auto-rows: auto;
+}
+
+.image {
+    text-align: center;
+    -webkit-animation: textimage2 5s linear forwards;
+    animation: textimage2 5s linear forwards;
+    opacity: 0;
+}
+
+@-webkit-keyframes textimage2 {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  
+  @keyframes textimage2 {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+/* top image text end */
